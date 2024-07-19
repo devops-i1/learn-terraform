@@ -1,4 +1,4 @@
-resource "aws_instance" "test" {
+resource "aws_instance" "frontend" {
   ami           = "ami-041e2ea9402c46c32"
   instance_type = "t3.micro"
   vpc_security_group_ids = "[sg-050c53e3ec8b8a873]"
@@ -9,7 +9,7 @@ resource "aws_instance" "test" {
 
 
 
-resource "aws_instance" "test" {
+resource "aws_instance" "backend" {
   ami           = "ami-041e2ea9402c46c32"
   instance_type = "t3.micro"
   vpc_security_group_ids = "[sg-050c53e3ec8b8a873]"
@@ -20,7 +20,7 @@ resource "aws_instance" "test" {
 
 
 
-resource "aws_instance" "test" {
+resource "aws_instance" "mysql" {
   ami           = "ami-041e2ea9402c46c32"
   instance_type = "t3.micro"
   vpc_security_group_ids = "[sg-050c53e3ec8b8a873]"
