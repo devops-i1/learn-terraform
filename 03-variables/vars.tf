@@ -4,5 +4,13 @@ variable "x" {
 }
 
 # Declare variable without value
-variable "y" {}
+#variable "y" {}
 
+variable "y_list" {
+  default = [1,2,3]
+}
+
+# print the variable
+output "y_list" {
+  value = var.y_list
+}
