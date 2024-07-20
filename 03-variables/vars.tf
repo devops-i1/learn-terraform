@@ -37,5 +37,9 @@ output "z_map" {
 
 # accessing values in list based on index
 output "y_list1" {
-  value = var.y_list[0]
+  value = var.y_list[1]
+}
+
+output "z_x" {
+  value = var.z_map["x"]
 }
