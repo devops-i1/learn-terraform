@@ -23,6 +23,10 @@ variable "z_map" {
 
 
 # print the variable
+output "x" {
+  value = var.x
+}
+
 output "y_list" {
   value = var.y_list
 }
