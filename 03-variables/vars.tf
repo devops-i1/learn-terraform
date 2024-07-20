@@ -34,3 +34,8 @@ output "y_list" {
 output "z_map" {
   value = var.z_map
 }
+
+# accessing values in list based on index
+output "y_list1" {
+  value = var.y_list[0]
+}
