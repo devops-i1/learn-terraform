@@ -43,3 +43,11 @@ output "y_list1" {
 output "z_x" {
   value = var.z_map["x"]
 }
+
+
+# we can Declare empty variables but data can be sent from a file those files are tfvars.
+
+variable "env" {}
+output "env" {
+  value = var.env
+}
