@@ -57,3 +57,8 @@ variable "common" {}
 output "common" {
   value = var.common
 }
+
+# Data in TF is in 3 types;
+# 1. strings - need to quotes tF supports only double quotes
+# 2. numbers
+# 3. Boolean
