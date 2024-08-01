@@ -52,6 +52,11 @@ output "env" {
   value = var.env
 }
 
+# Scenario of want to use inbuilt function/access variable from with in quotes
+output "env_name" {
+  value = "Environment name - ${var.env} - ${uppercase(var.env)}"
+}
+
 # *.auto.tfvars are the files which will picked up automatically no need to provide exclusively and along with this the file name is terraform.auto.tfvars then also terraform picks the vars file automatically, no need to specify exclusively.
 variable "common" {}
 output "common" {
